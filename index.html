@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How Elite PMs Prioritize at Scale</title>
+<title>Sudha Kiran Gatala — PM Thought Leadership</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -395,6 +395,140 @@
   }
   footer p { font-size: 13px; color: var(--muted); }
 
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(247,245,240,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 32px;
+  }
+  .nav-inner {
+    max-width: 860px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 56px;
+  }
+  .nav-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 17px; color: var(--text); text-decoration: none;
+  }
+  .nav-links { display: flex; gap: 4px; }
+  .nav-link {
+    font-size: 13px; color: var(--muted); text-decoration: none;
+    padding: 6px 12px; border-radius: 20px; transition: all .15s;
+  }
+  .nav-link:hover { background: var(--surface); color: var(--text); }
+
+  /* ── ABOUT ── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 64px; align-items: start;
+  }
+  .about-left { }
+  .about-initials {
+    width: 80px; height: 80px; border-radius: 50%;
+    background: var(--accent); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Serif Display', serif; font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .about-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px; line-height: 1.2; margin-bottom: 8px;
+  }
+  .about-role {
+    font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 20px;
+  }
+  .about-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .about-tag {
+    font-size: 11px; font-weight: 500; letter-spacing: .05em;
+    padding: 5px 12px; border-radius: 20px;
+    border: 1px solid var(--border); color: var(--muted);
+    background: var(--surface);
+  }
+  .about-right { }
+  .about-bio {
+    font-size: 16px; color: var(--text); line-height: 1.8;
+    margin-bottom: 32px;
+  }
+  .about-bio p { margin-bottom: 16px; }
+  .about-bio p:last-child { margin-bottom: 0; }
+  .about-highlights {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  }
+  .about-hl {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 16px 18px;
+  }
+  .about-hl-num {
+    font-family: 'DM Serif Display', serif; font-size: 26px;
+    color: var(--accent); margin-bottom: 4px;
+  }
+  .about-hl-label { font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+  /* ── LEADERSHIP ── */
+  .leadership-bg {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .leadership-inner {
+    max-width: 860px; margin: 0 auto; padding: 72px 32px;
+  }
+  .leadership-pillars {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px; margin-top: 40px;
+  }
+  .pillar {
+    border-radius: 12px; padding: 28px 22px;
+    border: 1px solid var(--border);
+    position: relative; overflow: hidden;
+  }
+  .pillar-num {
+    font-family: 'DM Serif Display', serif; font-size: 48px;
+    line-height: 1; margin-bottom: 16px; opacity: .12;
+    position: absolute; top: 12px; right: 16px;
+  }
+  .pillar-title {
+    font-weight: 500; font-size: 15px; margin-bottom: 10px;
+    color: var(--text);
+  }
+  .pillar-text { font-size: 13px; color: var(--muted); line-height: 1.65; }
+  .leadership-quote {
+    margin-top: 48px; padding: 32px 36px;
+    background: var(--accent-light); border-left: 3px solid var(--accent);
+    border-radius: 0 12px 12px 0;
+  }
+  .leadership-quote p {
+    font-family: 'DM Serif Display', serif; font-style: italic;
+    font-size: clamp(18px, 2.5vw, 22px); color: var(--text);
+    line-height: 1.5; margin-bottom: 12px;
+  }
+  .leadership-quote span { font-size: 12px; color: var(--muted); }
+
+  /* ── FAITH ── */
+  .faith-section { max-width: 860px; margin: 0 auto; padding: 72px 32px; }
+  .faith-grid {
+    display: grid; grid-template-columns: 1.4fr 1fr;
+    gap: 64px; align-items: start; margin-top: 40px;
+  }
+  .faith-text { }
+  .faith-text p {
+    font-size: 15px; color: var(--text); line-height: 1.8; margin-bottom: 20px;
+  }
+  .faith-text p:last-child { margin-bottom: 0; }
+  .faith-text em { color: var(--accent); font-style: normal; font-weight: 500; }
+  .faith-cards { display: flex; flex-direction: column; gap: 12px; }
+  .faith-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px 20px;
+  }
+  .faith-card-title {
+    font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 6px;
+  }
+  .faith-card-text { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 640px) {
     .hero { grid-template-columns: 1fr; gap: 40px; padding: 48px 24px 40px; }
@@ -407,6 +541,18 @@
 </head>
 <body>
 
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="#">Sudha Kiran Gatala</a>
+    <div class="nav-links">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#leadership">Leadership</a>
+      <a class="nav-link" href="#faith">Faith & Work</a>
+      <a class="nav-link" href="#frameworks">Frameworks</a>
+    </div>
+  </div>
+</nav>
 <!-- HERO -->
 <div class="hero">
   <div class="hero-left">
@@ -438,8 +584,143 @@
   </div>
 </div>
 
+<!-- ABOUT -->
+<div id="about" class="section">
+  <div class="section-label">About</div>
+  <div class="about-grid">
+    <div class="about-left">
+      <div class="about-initials">SG</div>
+      <div class="about-name">Sudha Kiran Gatala</div>
+      <div class="about-role">Product leader · AI builder · Church teacher</div>
+      <div class="about-tags">
+        <span class="about-tag">Product Strategy</span>
+        <span class="about-tag">AI / ML</span>
+        <span class="about-tag">Multi-agent systems</span>
+        <span class="about-tag">Team leadership</span>
+        <span class="about-tag">Faith & work</span>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-bio">
+        <p>I'm a product leader building at the intersection of AI and human experience. My work spans product strategy, multi-model AI systems, and leading teams that ship things that matter.</p>
+        <p>Right now I'm deep in building an AI-powered product that unifies how people interact with intelligence — a problem I've been obsessing over for years. More on that soon.</p>
+        <p>Outside of product, I teach adult faith education classes and prepare sermons — which turns out to be excellent training for communicating complex ideas to mixed audiences with different levels of context.</p>
+      </div>
+      <div class="about-highlights">
+        <div class="about-hl">
+          <div class="about-hl-num">AI</div>
+          <div class="about-hl-label">Building at the frontier of AI products</div>
+        </div>
+        <div class="about-hl">
+          <div class="about-hl-num">∞</div>
+          <div class="about-hl-label">Frameworks studied, tested, refined</div>
+        </div>
+        <div class="about-hl">
+          <div class="about-hl-num">2</div>
+          <div class="about-hl-label">Roles: product leader & church teacher</div>
+        </div>
+        <div class="about-hl">
+          <div class="about-hl-num">1</div>
+          <div class="about-hl-label">North star: make teams smarter</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LEADERSHIP -->
+<div class="leadership-bg" id="leadership">
+  <div class="leadership-inner">
+    <div class="section-label">Leadership philosophy</div>
+    <div class="leadership-pillars">
+      <div class="pillar" style="background:#EAF0EC;border-color:#C5D9CE;">
+        <div class="pillar-num" style="color:#2D4A3E;">1</div>
+        <div class="pillar-title">Clarity over comfort</div>
+        <div class="pillar-text">Ambiguity is the enemy of execution. A good leader's first job is to make the path obvious — even when it's hard.</div>
+      </div>
+      <div class="pillar" style="background:#EEEAF8;border-color:#C9C3E8;">
+        <div class="pillar-num" style="color:#3D2B6B;">2</div>
+        <div class="pillar-title">Delegate the what, own the why</div>
+        <div class="pillar-text">Leaders who stay in the operational weeds trade executive presence for the illusion of control. The why belongs to you. The how belongs to your team.</div>
+      </div>
+      <div class="pillar" style="background:#FDF0E6;border-color:#EDD0B0;">
+        <div class="pillar-num" style="color:#B85C1A;">3</div>
+        <div class="pillar-title">Narrative is strategy</div>
+        <div class="pillar-text">The best PMs and leaders don't just make decisions — they make decisions legible. A compelling story about where you're going is itself a form of leadership.</div>
+      </div>
+      <div class="pillar" style="background:#E3F2F2;border-color:#B0D8D8;">
+        <div class="pillar-num" style="color:#0F5E5E;">4</div>
+        <div class="pillar-title">Play the long game</div>
+        <div class="pillar-text">Short-term wins compound differently than long-term trust. The most important career and product decisions aren't urgent — they're foundational.</div>
+      </div>
+    </div>
+    <div class="leadership-quote">
+      <p>"Too many operations, too little executive presence — that's the trap most product leaders fall into without realizing it."</p>
+      <span>Personal leadership challenge I'm actively working through</span>
+    </div>
+  </div>
+</div>
+
+<!-- FAITH & LEADERSHIP -->
+<div id="faith" class="faith-section">
+  <div class="section-label">Faith & work</div>
+  <div class="faith-grid">
+    <div class="faith-text">
+      <p>I teach adult faith education classes and preach sermons — and it has made me a significantly better product leader. Not despite the tension between the two worlds, but because of it.</p>
+      <p>Teaching a mixed audience of believers and curious skeptics every week is the best training I know for <em>leading with felt need rather than doctrine</em>. You can't assume shared context. You have to earn attention. You have to make abstract ideas land in real life.</p>
+      <p>That's exactly what great product work requires. The user doesn't care about your architecture. They care about their problem. The framework is the sermon — the product is the moment it lands.</p>
+      <p>Faith also gives me a longer time horizon than most. It's hard to panic over a bad quarter when your operating framework runs on something bigger than a fiscal year.</p>
+    </div>
+    <div class="faith-cards">
+      <div class="faith-card">
+        <div class="faith-card-title">What teaching has given PM</div>
+        <div class="faith-card-text">Communicating complex ideas to mixed audiences. Leading with felt need. Earning trust before making the ask.</div>
+      </div>
+      <div class="faith-card">
+        <div class="faith-card-title">What PM has given teaching</div>
+        <div class="faith-card-text">Structured frameworks for preparing messages. User research instincts applied to congregation needs. Ruthless editing for clarity.</div>
+      </div>
+      <div class="faith-card">
+        <div class="faith-card-title">The common thread</div>
+        <div class="faith-card-text">Both disciplines reward patience, precision, and the willingness to be wrong out loud — and then show up and try again next week.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- FRAMEWORKS -->
-<div class="section">
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Product leadership</div>
+    <h1 class="hero-title">How <em>elite PMs</em> prioritize at scale</h1>
+    <p class="hero-desc">Five frameworks drawn from the best product leaders at Google and Meta — the mental models behind billion-user products.</p>
+  </div>
+  <div class="hero-right">
+    <div class="hero-stat">
+      <div class="hero-stat-num">5</div>
+      <div class="hero-stat-label">Prioritization frameworks</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">2</div>
+      <div class="hero-stat-label">Companies — Google & Meta</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">1B+</div>
+      <div class="hero-stat-label">Users these PMs have built for</div>
+    </div>
+  </div>
+</div>
+
+<!-- QUOTE -->
+<div class="quote-strip">
+  <div class="quote-inner">
+    <p class="quote-text">"The best PMs weren't trying to be great PMs. They were trying to solve hard problems."</p>
+    <p class="quote-attr">Pattern observed across Google &amp; Meta product leadership</p>
+  </div>
+</div>
+
+<!-- FRAMEWORKS -->
+<div id="frameworks" class="section">
   <div class="section-label">The frameworks</div>
 
   <div class="fw-tabs">
@@ -653,8 +934,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>How Elite PMs Prioritize at Scale</p>
-  <p>Based on frameworks from Google &amp; Meta product leaders</p>
+  <p>Sudha Kiran Gatala · PM Thought Leadership</p>
+  <p>Frameworks from Google &amp; Meta · Built with intention</p>
 </footer>
 
 <script>
